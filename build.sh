@@ -69,6 +69,7 @@ if [ "${GD_BUILDER}" != "TRAVIS" ] ; then
    cp travis_wait.sh Stage1
    cp config-lxc Stage1
    cp ${GD_ENV_FILE} Stage1
+   cp sources.list-wily Stage1
    cd Stage1
    sed 's/LOCAL_UID/'${ME}'/g' Dockerfile.stage1 > Dockerfile
    docker build -f Dockerfile -t ${NAMESPACE}/gitian-stage1 . 

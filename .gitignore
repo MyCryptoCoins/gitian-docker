@@ -1,4 +1,6 @@
 clean.sh
-Stage2/
-
-
+Dockerfile.stage2
+/Stage2
+/Stage1
+/gjhurlbu
+MacOSX*.tar.gz
